@@ -52,5 +52,10 @@ namespace TelaDeLogin.Cadastro
             maskedTxtTelefone.Clear();
             richTxtEndereco.Clear();
         }
+
+        private void txtNome_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

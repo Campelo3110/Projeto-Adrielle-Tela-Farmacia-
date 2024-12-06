@@ -10,8 +10,8 @@
         private TextBox txtSenha;
         private Label lblConfirmarSenha;
         private TextBox txtConfirmarSenha;
-        private Label lblTipoUsuario;
-        private ComboBox cmbTipoUsuario;
+        private Label lblTelefone;
+        private TextBox txtTelefone;
         private Button btnSalvar;
         private Button btnLimpar;
         private Button btnFechar;
@@ -26,8 +26,8 @@
             txtSenha = new TextBox();
             lblConfirmarSenha = new Label();
             txtConfirmarSenha = new TextBox();
-            lblTipoUsuario = new Label();
-            cmbTipoUsuario = new ComboBox();
+            lblTelefone = new Label();
+            txtTelefone = new TextBox();
             btnSalvar = new Button();
             btnLimpar = new Button();
             btnFechar = new Button();
@@ -55,6 +55,7 @@
             lblEmail.Size = new Size(100, 23);
             lblEmail.TabIndex = 2;
             lblEmail.Text = "E-mail:";
+            lblEmail.Click += lblEmail_Click;
             // 
             // txtEmail
             // 
@@ -95,53 +96,51 @@
             txtConfirmarSenha.Size = new Size(250, 27);
             txtConfirmarSenha.TabIndex = 7;
             // 
-            // lblTipoUsuario
+            // lblTelefone
             // 
-            lblTipoUsuario.Location = new Point(20, 180);
-            lblTipoUsuario.Name = "lblTipoUsuario";
-            lblTipoUsuario.Size = new Size(131, 23);
-            lblTipoUsuario.TabIndex = 8;
-            lblTipoUsuario.Text = "Tipo de Usuário:";
+            lblTelefone.Location = new Point(20, 183);
+            lblTelefone.Name = "lblTelefone";
+            lblTelefone.Size = new Size(131, 23);
+            lblTelefone.TabIndex = 8;
+            lblTelefone.Text = "Telefone:";
             // 
-            // cmbTipoUsuario
+            // txtTelefone
             // 
-            cmbTipoUsuario.Items.AddRange(new object[] { "Administrador", "Usuário Comum" });
-            cmbTipoUsuario.Location = new Point(150, 180);
-            cmbTipoUsuario.Name = "cmbTipoUsuario";
-            cmbTipoUsuario.Size = new Size(250, 28);
-            cmbTipoUsuario.TabIndex = 9;
-            cmbTipoUsuario.SelectedIndexChanged += cmbTipoUsuario_SelectedIndexChanged;
+            txtTelefone.Location = new Point(150, 180);
+            txtTelefone.Name = "txtTelefone";
+            txtTelefone.Size = new Size(250, 27);
+            txtTelefone.TabIndex = 9;
             // 
             // btnSalvar
             // 
-            btnSalvar.Location = new Point(50, 230);
+            btnSalvar.Location = new Point(45, 244);
             btnSalvar.Name = "btnSalvar";
-            btnSalvar.Size = new Size(75, 23);
+            btnSalvar.Size = new Size(75, 34);
             btnSalvar.TabIndex = 10;
             btnSalvar.Text = "Salvar";
             btnSalvar.Click += btnSalvar_Click;
             // 
             // btnLimpar
             // 
-            btnLimpar.Location = new Point(150, 230);
+            btnLimpar.Location = new Point(150, 244);
             btnLimpar.Name = "btnLimpar";
-            btnLimpar.Size = new Size(75, 23);
+            btnLimpar.Size = new Size(75, 34);
             btnLimpar.TabIndex = 11;
             btnLimpar.Text = "Limpar";
             btnLimpar.Click += btnLimpar_Click;
             // 
             // btnFechar
             // 
-            btnFechar.Location = new Point(250, 230);
+            btnFechar.Location = new Point(255, 244);
             btnFechar.Name = "btnFechar";
-            btnFechar.Size = new Size(75, 23);
+            btnFechar.Size = new Size(75, 34);
             btnFechar.TabIndex = 12;
             btnFechar.Text = "Fechar";
             btnFechar.Click += btnFechar_Click;
             // 
             // CadastroUsuario
             // 
-            ClientSize = new Size(450, 300);
+            ClientSize = new Size(450, 309);
             Controls.Add(lblNomeUsuario);
             Controls.Add(txtNomeUsuario);
             Controls.Add(lblEmail);
@@ -150,8 +149,8 @@
             Controls.Add(txtSenha);
             Controls.Add(lblConfirmarSenha);
             Controls.Add(txtConfirmarSenha);
-            Controls.Add(lblTipoUsuario);
-            Controls.Add(cmbTipoUsuario);
+            Controls.Add(lblTelefone);
+            Controls.Add(txtTelefone);
             Controls.Add(btnSalvar);
             Controls.Add(btnLimpar);
             Controls.Add(btnFechar);

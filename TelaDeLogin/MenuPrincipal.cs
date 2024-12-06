@@ -16,6 +16,13 @@ namespace TelaDeLogin
             cadastroClientes.Show();
         }
 
+        private void usuarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //Abre a tela de cadastro de usuario
+            CadastroUsuario cadastroUsuario = new CadastroUsuario();
+            cadastroUsuario.Show();
+        }
+
         private void medicamentosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             CadastroMedicamento cadastroMedicamento = new CadastroMedicamento();

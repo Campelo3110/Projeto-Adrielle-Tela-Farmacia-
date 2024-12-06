@@ -33,16 +33,17 @@
             // 
             lblNome.Location = new Point(20, 20);
             lblNome.Name = "lblNome";
-            lblNome.Size = new Size(100, 23);
+            lblNome.Size = new Size(156, 23);
             lblNome.TabIndex = 0;
             lblNome.Text = "Nome do Fornecedor:";
             // 
             // txtNome
             // 
-            txtNome.Location = new Point(150, 20);
+            txtNome.Location = new Point(173, 20);
             txtNome.Name = "txtNome";
             txtNome.Size = new Size(250, 27);
             txtNome.TabIndex = 1;
+            txtNome.TextChanged += txtNome_TextChanged;
             // 
             // lblCNPJ
             // 
@@ -54,7 +55,7 @@
             // 
             // txtCNPJ
             // 
-            txtCNPJ.Location = new Point(150, 60);
+            txtCNPJ.Location = new Point(173, 57);
             txtCNPJ.Name = "txtCNPJ";
             txtCNPJ.Size = new Size(250, 27);
             txtCNPJ.TabIndex = 3;
@@ -69,7 +70,7 @@
             // 
             // maskedTxtTelefone
             // 
-            maskedTxtTelefone.Location = new Point(150, 100);
+            maskedTxtTelefone.Location = new Point(173, 100);
             maskedTxtTelefone.Mask = "(00) 00000-0000";
             maskedTxtTelefone.Name = "maskedTxtTelefone";
             maskedTxtTelefone.Size = new Size(250, 27);
@@ -85,7 +86,7 @@
             // 
             // richTxtEndereco
             // 
-            richTxtEndereco.Location = new Point(150, 140);
+            richTxtEndereco.Location = new Point(173, 140);
             richTxtEndereco.Name = "richTxtEndereco";
             richTxtEndereco.Size = new Size(250, 80);
             richTxtEndereco.TabIndex = 7;
@@ -93,7 +94,7 @@
             // 
             // btnSalvar
             // 
-            btnSalvar.Location = new Point(50, 250);
+            btnSalvar.Location = new Point(45, 287);
             btnSalvar.Name = "btnSalvar";
             btnSalvar.Size = new Size(75, 30);
             btnSalvar.TabIndex = 8;
@@ -102,7 +103,7 @@
             // 
             // btnLimpar
             // 
-            btnLimpar.Location = new Point(150, 250);
+            btnLimpar.Location = new Point(144, 287);
             btnLimpar.Name = "btnLimpar";
             btnLimpar.Size = new Size(75, 30);
             btnLimpar.TabIndex = 9;
@@ -111,7 +112,7 @@
             // 
             // btnFechar
             // 
-            btnFechar.Location = new Point(250, 250);
+            btnFechar.Location = new Point(244, 287);
             btnFechar.Name = "btnFechar";
             btnFechar.Size = new Size(75, 30);
             btnFechar.TabIndex = 10;

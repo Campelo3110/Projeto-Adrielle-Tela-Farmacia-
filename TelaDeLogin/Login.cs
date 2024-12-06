@@ -8,8 +8,8 @@ namespace TelaDeLogin
     public partial class Login : Form
     {
         // String de conexão com o banco de dados
-        private string connectionString = "Server=SPROA1090\\SQLEXPRESS01;Database=FarmaciaBC;Trusted_Connection=True;\r\n";
-
+        private string connectionString = "Data Source=SPROA1090\\SQLEXPRESS01;Initial Catalog=FarmaciaBC;Integrated Security=True;Trust Server Certificate=True;";
+        
         public Login()
         {
             InitializeComponent();
