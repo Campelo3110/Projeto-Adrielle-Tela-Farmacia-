@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using TelaDeLogin.Cadastro;
 
 namespace TelaDeLogin
 {
@@ -27,6 +28,12 @@ namespace TelaDeLogin
         {
             CadastroMedicamento cadastroMedicamento = new CadastroMedicamento();
             cadastroMedicamento.Show();
+        }
+
+        private void vendasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CadastroVendas cadastroVendas = new CadastroVendas();
+            cadastroVendas.Show();  
         }
 
         // Evento do botão "Sair"

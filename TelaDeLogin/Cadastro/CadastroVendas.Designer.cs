@@ -36,7 +36,6 @@
             lblSubtotal = new Label();
             txtSubtotal = new TextBox();
             dgvItens = new DataGridView();
-            txtTotalGeral = new TextBox();
             btnAdicionar = new Button();
             btnRemover = new Button();
             btnFinalizar = new Button();
@@ -138,14 +137,6 @@
             dgvItens.Size = new Size(600, 200);
             dgvItens.TabIndex = 11;
             // 
-            // txtTotalGeral
-            // 
-            txtTotalGeral.Location = new Point(500, 440);
-            txtTotalGeral.Name = "txtTotalGeral";
-            txtTotalGeral.ReadOnly = true;
-            txtTotalGeral.Size = new Size(100, 27);
-            txtTotalGeral.TabIndex = 16;
-            // 
             // btnAdicionar
             // 
             btnAdicionar.Location = new Point(20, 440);
@@ -197,7 +188,6 @@
             Controls.Add(btnRemover);
             Controls.Add(btnFinalizar);
             Controls.Add(btnCancelar);
-            Controls.Add(txtTotalGeral);
             Name = "CadastroVendas";
             Text = "Tela de Vendas";
             Load += CadastroVendas_Load;

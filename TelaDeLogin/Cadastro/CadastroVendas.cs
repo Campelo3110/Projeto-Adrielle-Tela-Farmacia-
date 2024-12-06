@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.Data.SqlClient;
 
 namespace TelaDeLogin.Cadastro
 {
     public partial class CadastroVendas : Form
     {
+        private string connectionString = "Server=SPROA1090\\SQLEXPRESS01;Database=FarmaciaBC;Trusted_Connection=True;TrustServerCertificate=True;";
+
         public CadastroVendas()
         {
             InitializeComponent();
