@@ -1,6 +1,6 @@
 ﻿namespace TelaDeLogin
 {
-    partial class Form1
+    partial class Login
     {
         private System.ComponentModel.IContainer components = null;
         private Label lblUsuario;

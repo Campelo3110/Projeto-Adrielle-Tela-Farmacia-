@@ -16,10 +16,21 @@ namespace TelaDeLogin
             cadastroClientes.Show();
         }
 
+        private void medicamentosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CadastroMedicamento cadastroMedicamento = new CadastroMedicamento();
+            cadastroMedicamento.Show();
+        }
+
         // Evento do botão "Sair"
         private void btnSair_Click(object sender, EventArgs e)
         {
             Application.Exit(); // Fecha o aplicativo
+        }
+
+        private void ferramentasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
