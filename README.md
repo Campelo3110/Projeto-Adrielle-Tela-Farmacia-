@@ -13,7 +13,7 @@ Este projeto consiste no desenvolvimento de uma aplicação para gestão de farm
 
 ## 📋 Funcionalidades (planejadas ou já implementadas)
 
-- [x] Login/Cadastro de usuario.
+- [x] Login/Cadastro de usuários.
 - [x] Cadastro de Medicamento.
 - [ ] Consulta de estoque.
 - [ ] Atualização de preços e informações.
